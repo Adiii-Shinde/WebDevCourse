@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Form to apply for Sigma Web Dev-TA</h1>
+     <form action="post">
+        <div>
+            <label for="username">Enter your username Man:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" autofocus  pattern="[A-Za-z]{3}">
+       </div>
+
+       <div>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+       </div>
+
+       <input type="checkbox" name="subscribe" id="subscribe" value="yes" required>
+       <label for="subscribe">Subscribe me</label>
+     </form>
+     <br>
+     <div>
+         <label for="comment">enter your comment</label>
+        <textarea  name="comment" id="comment" cols="30" rows="10">Enter your comment here...</textarea>
+
+     </div>
+
+     <div>
+        <select name="fruites" id="">
+            <option value="apple">Apple</option>
+            <option value="apple">Apple</option>
+            <option value="apple">Apple</option> 
+
+        </select>
+     </div>
+</body>
+</html>
+
+<!-- form get/post post for large amount of data  -->
+<!-- get request me limited value bhejate hai -->
+
+autonoumous
+required
+pattern attributes
+
+label for--id which is same as the input tags id
