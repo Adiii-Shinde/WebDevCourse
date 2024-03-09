@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing units</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+            border:solid 3px red;
+            margin: auto ;
+            box-sizing: border-box;
+            /* width: 2048px; */
+
+            /* viewport width */
+            width: 80vw;
+
+            /* percent of height the viewport will take  */
+            height: 10vh;
+            
+        }
+
+        html{
+            /* html is a root element */
+            font-size: 12px;
+        }
+        .container{
+            /* root ke size se 2 times   */
+            font-size: 2rem;
+
+
+            background-color: aqua;
+            border:solid 3px red;
+            margin: 23px auto;
+            box-sizing: border-box;
+            /* width: 2048px; */
+
+            /* viewport width */
+            width: 80vw;
+
+            height: 80vh;
+
+            /* font-size: 18px; */
+            
+        }
+        .container p{
+            /* font-size: 1.5em; */
+            /* original font size de 1.5x guna hoga  */
+
+            width: 50%;
+            border: 2px solid green;
+            background-color: azure;
+            box-sizing:border-box ;
+        }
+
+        .container p span{
+            border: 2px solid black;
+            background-color: bisque;
+            box-sizing: border-box;
+        }
+
+        .mycont{
+            background-color: red;
+            width: 100vmin;
+            /* here for width vmin is height cause you are in laptop so here vmin==vh{v height}  */
+
+            /* phonr me vmin is width of phone so look accordingly */
+
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    THis is a box
+</div>
+<div class="container">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque perspiciatis eaque aliquid officiis iste molestias, libero obcaecati voluptatem asperiores maxime?
+
+        <span>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, accusamus!
+        </span>
+    </p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat in sit minus magnam eos sint suscipit consequuntur fugiat. Quidem ducimus tenetur ratione, doloribus facere numquam velit reiciendis, quisquam, voluptas qui neque iste perspiciatis dolorum quae quaerat dolores optio? Quisquam aspernatur nesciunt officia commodi impedit itaque velit laboriosam autem ipsam quia.
+</div>
+
+<div class="mycont">
+    this is another container
+</div>
+</body>
+</html>
+
+
+<!-- css mdn web docs for comprehensive list of units. -->
