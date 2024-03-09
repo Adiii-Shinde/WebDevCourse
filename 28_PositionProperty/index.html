@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 1333px;
+            width: 80vw;
+            border: 2px solid black;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        .box1 {
+            background-color: rgb(35, 57, 57);
+            position: absolute;
+            /* nearest positioned ancestor ke along lagega -- if parent is not it will leave and go body in this way */
+            top: 0;
+            left: 0;
+            height: 111px;
+
+
+
+            /* position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin:0;
+            padding: 0; */
+
+        }
+
+        .box2 {
+            background-color: greenyellow;
+            /* position: relative; */
+            /* you can change the properties or move the elements by doing this  */
+            top: 34px;
+            /* bottom: 55px; */
+            left: 55px;
+
+
+        }
+
+        .box3 {
+            background-color: cyan;
+            position: fixed;
+            /* now the box is fixed even if you scroll it will still be there  */
+            bottom: 0;
+            right: 8vw;
+            height: 111px;
+        }
+
+        .box4 {
+            background-color: lightslategray;
+        }
+
+        .parent {
+            background-color: azure;
+            border: 2px solid black;
+            margin: 33px;
+            padding: 34px;
+            position: absolute;
+            
+            /* now the parent is absolute so the box 1s nearest positioned ansestor is parent box so it will go along with him  */
+
+            /* position: relative; */
+
+            /* transform,filter or perspective properties can also make an element appear as positioned */
+
+            filter: invert(0);
+            transform: translate(0);
+
+            /* element will feel like the parent is positioned due to this tranform or filter property and can cause bug like in reality the parent is not positioned  */
+
+            perspective: 0m;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
+
+<!-- bydefault position of all boxes are static so top bottom change nai kar sakate -->
