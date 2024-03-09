@@ -1,0 +1,56 @@
+ <!-- outlines follows borders  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding:34px;
+            box-shadow:  5px 15px 5px #70a711;
+        }
+        .text-element { text-shadow: 10px 5px 3px #e695f7 }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, atque. Modi voluptatibus necessitatibus architecto quidem sit maiores, ad nesciunt et odit esse. Possimus, ipsam et molestiae eius quae nisi quisquam maiores fugiat aut fuga!
+    </p>
+    
+</body>
+</html>
+
+
+Box Shadows
+
+box-shadow: h-offset v-offset blur spread color inset;
+
+h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+blur: The larger the value, the blurrier the shadow.
+spread: Expands or shrinks the shadow size.
+color: Defines the shadow color.
+inset: Makes the shadow inner.
+
+.div-element { box-shadow: 5px 5px 15px 5px #888888; }
+
+Text Shadows
+
+text-shadow: h-offset v-offset blur color;
+.text-element { text-shadow: 2px 2px 4px #888888; }
+
+Outlines
+
+outline: width style color;
+
+width: Sets the outline width.
+style: Determines the style of the outline such as solid, dotted, or dashed.
+color: Sets the outline color.
+
+.button-element:focus { outline: 2px solid blue; }
