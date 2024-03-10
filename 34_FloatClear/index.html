@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Float Clear </title>
+    <style>
+        img{
+            float: left;
+            /* float: right; */
+        }
+        .cards{
+            border: 2px solid black;
+
+            /* to accomodate floated element in parent container  */
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+
+            /* clear: both; */
+        }
+
+        .cards :nth-child(3){
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+<img src="https://images.pexels.com/photos/20440051/pexels-photo-20440051/free-photo-of-a-woman-leaning-against-a-railing-with-her-hand-on-her-chin.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" width="230px" alt="">
+        <div class="card">card1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam corporis vel, nesciunt distinctio consequuntur beatae quaerat commodi asperiores, ratione iusto molestiae unde molestias quod quos illum eveniet eum nemo perspiciatis cum! Placeat magnam magni ipsum quasi, molestiae eligendi quis expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus culpa illum architecto assumenda excepturi, accusamus quae sequi nesciunt autem, expedita at dicta doloremque? Tempora ipsa cupiditate minus autem temporibus dolor ducimus adipisci, illo deserunt aperiam tenetur fuga, quod dolore quisquam recusandae suscipit! Ipsa expedita labore a soluta harum! Amet voluptate corporis tenetur iusto culpa quas consequatur sunt voluptas quis voluptatibus veniam pariatur numquam officia veritatis, in explicabo debitis quibusdam iste, dolorem dignissimos dolore cupiditate! Eligendi, sequi sed aut earum enim adipisci. Reprehenderit mollitia optio commodi quibusdam saepe dolorum a vero sit architecto.</div>
+        <div class="card">card2  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellendus dicta dolorem quas voluptate architecto cupiditate molestiae, inventore veritatis ducimus accusantium autem pariatur officia ex explicabo facere expedita. Nam dicta nesciunt nisi. Nulla impedit minus voluptatibus veritatis repudiandae id beatae totam molestias maiores laborum inventore magni obcaecati pariatur eos, ipsum adipisci iusto, incidunt at maxime, labore modi? Quia, culpa amet? Earum iure corrupti sit, vero sapiente quaerat optio similique libero animi! Ipsa autem numquam sit reiciendis ullam voluptatem reprehenderit debitis quo, sint corporis perspiciatis cumque impedit! Veritatis repellat sint praesentium consequuntur reiciendis, maiores voluptate reprehenderit incidunt laudantium, ut nesciunt qui. Tempora sit quis quaerat eos amet, qui maiores, libero est sint numquam ad vero itaque expedita dolor ipsa rerum voluptatem explicabo consequuntur impedit aliquid suscipit illo fugit nisi? A excepturi eligendi dolorem nemo assumenda, praesentium ad commodi facilis deserunt non quam, nulla architecto delectus soluta consequuntur eveniet dolore. Laborum reiciendis ab incidunt ipsam dolores consectetur in molestias, exercitationem veritatis quibusdam optio sit earum excepturi hic? Repellendus provident doloremque nulla non voluptatum quas, omnis sed autem. Mollitia ratione ipsum omnis, eum veritatis officia est similique, ut obcaecati in nemo placeat maxime veniam aperiam inventore, dignissimos vel? Asperiores, placeat qui? Tenetur, dolorum.</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>
