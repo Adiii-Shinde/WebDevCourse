@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+border: 2px solid red;
+display:flex;
+height: 80vh;
+justify-content: center;
+
+/* preferd in one line of contetnt  */
+/* align-items: center; */
+/* flex-wrap: wrap; */
+/* when you have (Multiple lines)more than one block lines we use align content  */
+align-content: flex-start;
+
+/* there is no justify item in flexbox  */
+
+/* flex-flow: row row-reverse; */
+/* flex-flow: row wrap; */
+
+/* gap: 30px; */
+
+/* row-gap: 10px;
+column-gap: 50px; */
+
+gap: 20px 30px;
+        }
+        .items{
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: blueviolet;
+
+            flex-grow: 1;
+        }
+        .order1{
+            order: 100;
+        }
+        .order100{
+order: 101;
+        }
+
+        .items2{
+            flex-grow: 4;
+        }
+
+        .order100{
+            flex-shrink: 20;
+            align-self: flex-end;
+
+            /* aigning the particular element  */
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <div class="container">
+            <div class="items order1">1</div>
+        <div class="items items2"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <!-- <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div> -->
+            <!-- <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div> -->
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items order100">100</div>
+            
+        </div>
+    </main>
+</body>
+</html>
+
+items in flexbox lay bydefault  in a row(from left to right)
+when(flex direction :Row )
+
+main axis and cross access
+main accedd me center karega (flex direction row and justify content center)
